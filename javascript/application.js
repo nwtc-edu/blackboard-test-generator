@@ -153,11 +153,11 @@ function setState(state)
 				$($('generatorBtn')).update(generateLabel);
 				pos.x = $($('inputTxt')).cumulativeOffset()[0] - $($('generatorBtn')).cumulativeOffset()[0];
 
-				morphColors("generatorBtn", "backgroundColor", "#2daebf");
-				morphColors("helpBtn", "backgroundColor", "#2daebf");
-				morphColors("video_1", "backgroundColor", "#2daebf");
-				morphColors("video_2", "backgroundColor", "#2daebf");
-				morphColors("main", "borderTopColor", "#2daebf");
+				morphColors("generatorBtn", "backgroundColor", "#003764");
+				morphColors("helpBtn", "backgroundColor", "#003764");
+				morphColors("video_1", "backgroundColor", "#003764");
+				morphColors("video_2", "backgroundColor", "#003764");
+				morphColors("main", "borderTopColor", "#003764");
 				break;
 			
 			case downloadState:
@@ -176,11 +176,11 @@ function setState(state)
 				$($('generatorBtn')).update(downloadLabel);
 				pos.x = $($('outputTxt')).cumulativeOffset()[0] - $($('generatorBtn')).cumulativeOffset()[0];
 
-				morphColors("generatorBtn", "background", "#ff5c00");
-				morphColors("helpBtn", "background", "#ff5c00");
-				morphColors("video_1", "background", "#ff5c00");
-				morphColors("video_2", "background", "#ff5c00");
-				morphColors("main", "borderTopColor", "#ff5c00");
+				morphColors("generatorBtn", "background", "#0061A0");
+				morphColors("helpBtn", "background", "#0061A0");
+				morphColors("video_1", "background", "#0061A0");
+				morphColors("video_2", "background", "#0061A0");
+				morphColors("main", "borderTopColor", "#0061A0");
 				break;
 		}
 		

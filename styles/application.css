@@ -1,7 +1,7 @@
 
 body
 {
-	border-top: 25px solid #2daebf;
+	border-top: 25px solid #003764;
 }
 
 h1, h2, h3 {
@@ -27,7 +27,7 @@ textarea #outputTxt
 
 textarea:focus
 {
-	border-color: #2daebf;
+	border-color: #003764;
 }
 
 button
@@ -124,8 +124,8 @@ button
 }
  
 /* Colors ---------- */
-.blue.awesome { background-color: #2daebf; }
+.blue.awesome { background-color: #003764; }
 .red.awesome { background-color: #e33100; }
 .magenta.awesome { background-color: #a9014b; }
-.orange.awesome { background-color: #ff5c00; }
+.orange.awesome { background-color: #D24719; }
 .yellow.awesome { background-color: #ffb515; }
