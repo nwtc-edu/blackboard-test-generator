@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Blackboard Test Generator</title>
+		<script src="javascript/prototype.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascript/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascript/application.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="styles/screen.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="styles/application.css" type="text/css" media="screen" charset="utf-8">
+	</head>
+	<body id="main">
+		<div id="mask" style="display: none;"></div>
+    <div class="container" style="padding-top: 10px; margin: 0 auto; width: 960px;">
+			<div id="lightbox" style="display: none;">
+				<p style="float: right;"><a href="#" id="closeBtn" onclick="hideHelp();" class="awesome large blue">Close</a></p>
+				<div id="help"></div>
+				<div id="generate_help">
+					<h3>Blackboard eases the task of creating tests with the upload questions option.</h3>
+					<h4>This test generator will produce a properly formatted document you can use to generate your next test.</h4>
+					<p>You can use any word processing software (ie. Microsoft Word) to create your test.  The test generator will recognize lines beginning with numbers as individual questions and any row following as an associated answer.  Rows in your document which begin with anything other than an alphanumeric character will be ignored.  It is recommended that you utilize the numbering function in your word processor to help produce an organized document.  Once you have created your test, simply copy and paste the document into the test generate and click "Generate".  For details on the available question types, please see below.</p>
+					<p><a href="sample.doc" class="awesome large blue">Show Me An Example</a></p>
+				</div>
+				<div id="download_help">
+					<h3>You're almost done!</h3>
+					<h4>Follow these steps to finish creating your Blackboard test.</h4>
+					<ol>
+						<li>Access your class</li>
+						<li>Control Panel</li>
+						<li>Test Manager</li>
+						<li>Add Test</li>
+						<li>Type Name of Test</li>
+						<li>Submit</li>
+						<li>Drop down Question Type List</li>
+						<li>Select Upload Questions</li>
+						<li>Click Go</li>
+						<li>Browse to your test file and select it – e.g.) NewTest.txt</li>
+						<li>Provide number of points per question</li>
+						<li>Submit</li>
+					</ol>
+				</div>
+			</div>
+			<div class="span-24">
+				<div id="navigation">
+					<p><a href="#" onclick="help();" id="helpBtn" class="awesome large blue">Help</a></p>
+				</div>
+				<h1 id="blackboard_test_generator">Blackboard Test Generator</h1>
+				<p id="instructional_videos">
+					<a id="video_1" href="videos/step1.mp4" class="awesome medium blue" style="margin-right: 1em;">Instructional Video - Step 1</a>
+					<a id="video_2" href="videos/step2.mp4" class="awesome medium blue">Instructional Video - Step 2</a>
+				</p>
+			</div>
+			<form id="testForm" action="generate.php" method="post">
+				<div class="span-12">
+					<p>
+						<textarea id="inputTxt" name="inputTxt">Type your questions in Word. (Click the Help button for an example for required formatting.) Copy and paste your test here.</textarea>
+					</p>
+				</div>
+				<div class="span-12 last">
+					<p><textarea id="outputTxt" name="outputTxt"></textarea></p>
+				</div>
+			</form>
+			<div class="span-24">
+				<p><a href="#" id="generatorBtn" class="awesome large blue">Generate &#x2192;</a></p>
+			</div>
+			<div class="span-24">
+				<p><textarea id="debug" style="height: 100px;"></textarea></p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,131 @@
+
+body
+{
+	border-top: 25px solid #2daebf;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, serif;
+}
+
+textarea
+{
+	width: 90%;
+	height: 250px;
+}
+
+textarea.instructions
+{
+	font-size: 18px;
+	color: #5C5C5C;
+}
+
+textarea #outputTxt
+{
+	border: 0px solid #FFFFFF;
+}
+
+textarea:focus
+{
+	border-color: #2daebf;
+}
+
+button
+{
+	background: none;
+	border: none;
+}
+
+#lightbox
+{
+	position: fixed;
+	z-index: 900;
+	background-repeat: no-repeat;
+	background-image: url('../images/lightboxBlue.png');
+	width: 640px;
+	height: 450px;
+}
+
+	#lightbox div:first-child {
+		padding: 25px 50px;
+		overflow: auto;
+	}
+	
+	#lightbox ul
+	{
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	#lightbox #closeBtn
+	{
+		margin-top: 25px;
+		margin-right: 50px;
+	}
+	
+#mask
+{
+	/* set it to fill the whil screen */
+	width: 100%; 
+	height: 100%;
+
+	/* transparency for different browsers */
+	filter: alpha(opacity=50); 
+	-moz-opacity: 0.5; 
+	-khtml-opacity: 0.5; 
+	opacity: 0.5; 
+	background: #000; 
+
+	/* make sure it appear behind the dialog box but above everything else */
+	position: absolute; 
+	top: 0px;
+	left: 0px; 
+	z-index: 899;
+}
+
+#navigation
+{
+	float: right;
+}
+
+/* Special thanks to Zurb for truely awesome buttons */
+/* http://www.zurb.com/article/266/super-awesome-buttons-with-css3-and-rgba */
+.awesome
+{
+	background: #222 url(/images/alert-overlay.png) repeat-x;
+	display: inline-block;
+	padding: 5px 10px 6px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+}
+
+/* Sizes ---------- */
+.large.awesome
+{
+	font-size: 18px;
+	padding: 8px 14px 9px;
+}
+
+.medium.awesome
+{
+	font-size: 14px;
+	padding: 6px 10px 7px;
+}
+ 
+/* Colors ---------- */
+.blue.awesome { background-color: #2daebf; }
+.red.awesome { background-color: #e33100; }
+.magenta.awesome { background-color: #a9014b; }
+.orange.awesome { background-color: #ff5c00; }
+.yellow.awesome { background-color: #ffb515; }
