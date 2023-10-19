@@ -79,6 +79,9 @@ textarea {
     border-radius: 8px;
 }
 
-[class^='span-'] {
+/*
+    .span-12 is used by the <textarea>
+*/
+[class^='span-']:not(.span-12) {
     width: 100%;
 }
