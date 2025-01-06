@@ -1,9 +1,11 @@
 
 # Blackboard Test Generator
 
+> [!IMPORTANT]
+> Northeast Wisconsin Technical College no longer maintains these pages and does not guarantee its functionality or availability.
+
 The original version of this tool has been decommissioned. This version has been provided so that any people who relied on it in the past may reference it for their future use.
 
-Northeast Wisconsin Technical College no longer maintains these pages and does not guarantee its functionality or availability.
 
 ## Notes
 
